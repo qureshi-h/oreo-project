@@ -12,10 +12,6 @@ export const KanyeQuote = () => {
     const getQuote = () => {
         fetch("https://api.kanye.rest", {
             method: "GET",
-            // headers: new Headers({
-            //     "Content-Type": "application/json",
-            //     Accept: "application/json",
-            // }),
         })
             .then((response) => response.json())
             .then((data) => {
