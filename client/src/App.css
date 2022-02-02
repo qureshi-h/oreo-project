@@ -1,6 +1,6 @@
 @import url("http://fonts.cdnfonts.com/css/vtks-lemon-drop");
 @import url("http://fonts.cdnfonts.com/css/doodlepenlimited");
-@import url("http://fonts.cdnfonts.com/css/dreamwood-demo");
+@import url("http://fonts.cdnfonts.com/css/soda-berry");
 
 @media screen and (max-width: 1200px) {
     html {
@@ -98,7 +98,7 @@ h2 {
 }
 
 h3 {
-    font-family: "Dreamwood DEMO", sans-serif;
+    font-family: "Soda Berry", sans-serif;
     font-size: 2rem;
     font-weight: 300;
     color: white;
@@ -116,6 +116,63 @@ p {
     font-size: 0.9rem;
     font-weight: 100;
     color: white;
+}
+
+/* Navbar */
+
+.navbar {
+    width: 100vw;
+    height: 8vh;
+    background-color: rgba(0, 0, 0, 0.103);
+    top: 0;
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbarText {
+    margin-left: 4vw;
+    cursor: pointer;
+
+    font-family: "Sequel", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: white;
+
+    text-decoration: none;
+}
+
+.toolsDropdown {
+    position: absolute;
+    transform: translateX(3vw);
+    background-color: rgba(0, 0, 0, 0.103);
+    z-index: 1;
+    display: block;
+    top: 0vh;
+    padding-top: 8vh;
+    padding-bottom: 0.5vh;
+    width: 10vw;
+}
+
+.toolsDropdownItem {
+    display: block;
+    padding: 1vh 1vw 1vh 1vw;
+
+    width: 100%;
+    margin: auto;
+
+    cursor: pointer;
+}
+
+.toolsDropdownItem:hover {
+    filter: brightness(90%);
+}
+
+.toolsDropdownText {
+    font-size: 0.9rem;
+    color: white;
+    font-family: "Sequel", sans-serif;
+    word-wrap: break-word;
 }
 
 /* Landing Page  */
@@ -142,7 +199,6 @@ p {
     background-image: url("./res/kanye-background.jpeg");
     background-size: cover;
     height: 100vh;
-    /* align-items: center; */
     justify-content: center;
     width: 100vw;
 }

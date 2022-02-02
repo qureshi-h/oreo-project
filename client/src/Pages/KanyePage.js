@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { KanyeQuote } from "../Components/Kanye/KanyeQuote";
+import { NavigationBar } from "../Components/UIElements/NavigationBar";
 
 export const KanyePage = () => {
     return (
@@ -9,6 +10,7 @@ export const KanyePage = () => {
                 <title>The Oreo Project | Home</title>
                 <style>{"body { background-color: #060026; }"}</style>
             </Helmet>
+            <NavigationBar />
             <KanyeQuote />
         </div>
     );

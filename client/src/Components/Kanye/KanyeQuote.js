@@ -35,22 +35,42 @@ export const KanyeQuote = () => {
                 </h2>
             </div>
 
-            {quote && (
-                <div>
-                    <img className="kanyeImage" src={image} />
-
-                    <div className="quoteBox">
-                        <div style={{ padding: "2rem" }}>
-                            <h3>{quote}</h3>
-                            <h3
-                                style={{ marginTop: "5vh", textAlign: "right" }}
-                            >
-                                - Ye
-                            </h3>
+            {quote &&
+                (Math.random() < 0.5 ? (
+                    <div>
+                        <div className="quoteBox">
+                            <div style={{ padding: "2rem" }}>
+                                <h3>{quote}</h3>
+                                <h3
+                                    style={{
+                                        marginTop: "5vh",
+                                        textAlign: "right",
+                                    }}
+                                >
+                                    - Ye
+                                </h3>
+                            </div>
+                        </div>
+                        <img className="kanyeImage" src={image} />
+                    </div>
+                ) : (
+                    <div>
+                        <img className="kanyeImage" src={image} />
+                        <div className="quoteBox">
+                            <div style={{ padding: "2rem" }}>
+                                <h3>{quote}</h3>
+                                <h3
+                                    style={{
+                                        marginTop: "5vh",
+                                        textAlign: "right",
+                                    }}
+                                >
+                                    - Ye
+                                </h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-            )}
+                ))}
         </div>
     );
 };
