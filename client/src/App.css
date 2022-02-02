@@ -1,5 +1,6 @@
 @import url("http://fonts.cdnfonts.com/css/vtks-lemon-drop");
 @import url("http://fonts.cdnfonts.com/css/doodlepenlimited");
+@import url("http://fonts.cdnfonts.com/css/dreamwood-demo");
 
 @media screen and (max-width: 1200px) {
     html {
@@ -96,6 +97,13 @@ h2 {
     color: black;
 }
 
+h3 {
+    font-family: "Dreamwood DEMO", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+}
+
 h4 {
     font-family: "vtks Lemon Drop", sans-serif;
     font-size: 1.2rem;
@@ -118,12 +126,37 @@ p {
 
 .background {
     display: inline-flex;
-    height: 80vh;
     top: 0;
     background-image: url("./res/landing-page.jpeg");
-    background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     align-items: center;
     justify-content: center;
+}
+
+/* Kanye Page */
+
+.kanyeBackground {
+    display: inline-flex;
+    top: 0;
+    background-image: url("./res/kanye-background.jpeg");
+    background-size: cover;
+    height: 100vh;
+    /* align-items: center; */
+    justify-content: center;
+    width: 100vw;
+}
+
+.quoteBox {
+    border: 1px solid white;
+    margin: 0vh 0vw 0vh 10vw;
+    width: 25vw;
+    height: auto;
+    display: inline-block;
+}
+
+.kanyeImage {
+    margin: 5vh 0vw 0vh 15vw;
+    width: 35vw;
+    display: inline-block;
 }
