@@ -24,7 +24,7 @@ export const KanyeQuote = () => {
         <div>
             <div style={{ textAlign: "center", width: "100vw" }}>
                 <h2 style={{ color: "white", marginTop: "15vh" }}>
-                    Ye - (Formerly Kanye Omari West)
+                    Ye - (Formerly Kanye West)
                 </h2>
                 <h2 style={{ color: "white", fontSize: "1.5rem" }}>
                     Born 1977
