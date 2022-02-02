@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "Soda Berry";
+    src: local("Soda Berry"),
+        url(./res/fonts/SodaBerry-PK56g.ttf) format("truetype");
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
 @media screen and (max-width: 1200px) {
     html {
         font-size: 100%;
