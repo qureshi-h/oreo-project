@@ -138,18 +138,19 @@ p {
     width: 100vw;
     height: 8vh;
     background-color: rgba(0, 0, 0, 0.103);
-    top: 0;
+    top: 0vh;
+    left: 0;
     position: absolute;
-    display: inline-flex;
+    display: flex;
     align-items: center;
 }
 
 .navbarText {
-    margin-left: 4vw;
+    margin-right: 4vw;
     cursor: pointer;
 
     font-family: "Soda Berry", sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 100;
     color: white;
 
@@ -158,14 +159,13 @@ p {
 
 .toolsDropdown {
     position: absolute;
-    transform: translateX(3vw);
-    background-color: rgba(0, 0, 0, 0.103);
+    transform: translateX(-1vw);
     z-index: 1;
     display: block;
     top: 0vh;
     padding-top: 8vh;
     padding-bottom: 0.5vh;
-    width: 10vw;
+    padding-right: 2rem;
 }
 
 .toolsDropdownItem {
@@ -185,7 +185,7 @@ p {
 .toolsDropdownText {
     color: white;
     font-family: "Soda Berry", sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     word-wrap: break-word;
 }
 

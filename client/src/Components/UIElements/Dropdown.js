@@ -3,18 +3,12 @@ import React from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
-const menu = [{ name: "Kanye Qoutes", path: "/kanye" }];
-
-export const EntertainmentDropdown = () => {
+export const EntertainmentDropdown = ({ opacity, name, menu }) => {
     const [showTools, setShowTools] = React.useState(false);
 
     return (
         <div
-            style={{
-                display: "inline-flex",
-                justifyContent: "left",
-                alignItems: "left",
-            }}
+            style={{ display: "inline-flex", alignContent: "center" }}
             onMouseEnter={() => {
                 setShowTools(true);
             }}
@@ -22,23 +16,21 @@ export const EntertainmentDropdown = () => {
                 setShowTools(false);
             }}
         >
-            <Link
-                to="/#tools"
-                scroll={(el) =>
-                    el.scrollIntoView({
-                        behavior: "auto",
-                        block: "start",
-                    })
-                }
-                style={{ textDecoration: "none", zIndex: "3" }}
+            <a
+                href="/"
+                className="navbarText"
+                style={{ display: "inline-flex" }}
             >
-                <p className="navbarText">
-                    Entertainment <RiArrowDropDownLine size={"1.2em"} />
-                </p>
-            </Link>
-
+                {name}
+                <RiArrowDropDownLine size={"1.2em"} />
+            </a>
             {showTools && (
-                <div className="toolsDropdown">
+                <div
+                    className="toolsDropdown"
+                    style={{
+                        backgroundColor: `rgba(0, 0, 0, ${opacity})`,
+                    }}
+                >
                     {menu.map((item) => (
                         <Link to={item.path} style={{ textDecoration: "none" }}>
                             <div className="toolsDropdownItem toolsDropdownText">
