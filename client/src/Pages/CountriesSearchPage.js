@@ -1,17 +1,18 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { SelectCountry } from "../Components/Countries/SelectCountry";
 import { KanyeQuote } from "../Components/Kanye/KanyeQuote";
 import { NavigationBar } from "../Components/UIElements/NavigationBar";
 
-export const KanyePage = () => {
+export const CountriesSearchPage = () => {
     return (
-        <div className="kanyeBackground">
+        <div className="countriesBackground">
             <Helmet>
                 <title>The Oreo Project | Kanye Quotes</title>
                 <style>{"body { background-color: #060026; }"}</style>
             </Helmet>
             <NavigationBar />
-            <KanyeQuote />
+            <SelectCountry />
         </div>
     );
 };
