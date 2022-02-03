@@ -1,17 +1,18 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { SelectCountry } from "../Components/Countries/SelectCountry";
 import { NavigationBar } from "../Components/UIElements/NavigationBar";
 
-export const CountriesSearchPage = () => {
+import { useParams } from "react-router-dom";
+
+export const CountryInfoPage = () => {
+    const { country } = useParams();
     return (
         <div className="countriesBackground">
             <Helmet>
-                <title>The Oreo Project | Search Country</title>
+                <title>The Oreo Project | </title>
                 <style>{"body { background-color: #060026; }"}</style>
             </Helmet>
             <NavigationBar opacity={0.4} />
-            <SelectCountry />
         </div>
     );
 };

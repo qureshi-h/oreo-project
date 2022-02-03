@@ -4,8 +4,12 @@ import Select from "react-select";
 import countries from "./countries.json";
 import Button from "@mui/material/Button";
 
+import { useNavigate } from "react-router-dom";
+
 export const SelectCountry = () => {
-    const [country, setCountry] = React.useState("");
+    const [disabled, setDisabled] = React.useState(false);
+    const [country, setCountry] = React.useState(countries.data[0].name);
+    const navigate = useNavigate();
 
     const colourStyles = {
         control: (styles) => ({
@@ -30,6 +34,11 @@ export const SelectCountry = () => {
         },
     };
 
+    const handleClick = () => {
+        setDisabled(true);
+        navigate(`info/${country}`);
+    };
+
     return (
         <div className="selectCountry">
             <h1>Select a Country to find out more...</h1>
@@ -38,9 +47,10 @@ export const SelectCountry = () => {
                 options={countries.data}
                 onChange={(option) => setCountry(option.name)}
                 styles={colourStyles}
-                placeholder={countries.data[0].name}
+                placeholder={country}
             />
             <Button
+                disabled={disabled}
                 variant="contained"
                 className="selectCountryButton"
                 sx={{
@@ -48,6 +58,7 @@ export const SelectCountry = () => {
                     borderRadius: "0.5rem",
                     fontSize: "1.2rem",
                 }}
+                onClick={handleClick}
             >
                 Search
             </Button>
