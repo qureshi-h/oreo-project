@@ -15,7 +15,6 @@ export const KanyeQuote = () => {
         })
             .then((response) => response.json())
             .then((data) => {
-                console.log(data);
                 setQuote(data.quote);
             });
     };

@@ -148,8 +148,8 @@ p {
     margin-left: 4vw;
     cursor: pointer;
 
-    font-family: "Sequel", sans-serif;
-    font-size: 1.2rem;
+    font-family: "Soda Berry", sans-serif;
+    font-size: 1.4rem;
     font-weight: 100;
     color: white;
 
@@ -183,9 +183,9 @@ p {
 }
 
 .toolsDropdownText {
-    font-size: 0.9rem;
     color: white;
-    font-family: "Sequel", sans-serif;
+    font-family: "Soda Berry", sans-serif;
+    font-size: 1.4rem;
     word-wrap: break-word;
 }
 
@@ -229,4 +229,47 @@ p {
     margin: 5vh 0vw 0vh 15vw;
     width: 35vw;
     display: inline-block;
+}
+
+/* Countries Page */
+
+.countriesBackground {
+    display: inline-flex;
+    top: 0;
+    background-image: url("./res/flags.jpg");
+    background-size: cover;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+}
+
+.selectCountry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.selectBox {
+    width: 35vw;
+
+    text-indent: 1.5rem;
+    font-size: 1.5rem;
+    font-family: "DoodlePenLimited", sans-serif;
+    color: black;
+}
+
+.selectCountry h1 {
+    width: 100vw;
+    color: white;
+    font-size: 3.5rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.418);
+}
+
+.selectCountryButton {
+    height: 5vh;
 }
