@@ -1,9 +1,8 @@
 import React from "react";
-// import { HashLink } from "react-router-hash-link";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
-export const EntertainmentDropdown = ({ opacity, name, menu }) => {
+export const Dropdown = ({ opacity, name, menu }) => {
     const [showTools, setShowTools] = React.useState(false);
 
     return (

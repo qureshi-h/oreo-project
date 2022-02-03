@@ -1,5 +1,5 @@
 import React from "react";
-import { EntertainmentDropdown } from "./Dropdown";
+import { Dropdown } from "./Dropdown";
 
 const entertainmentMenu = [{ name: "Kanye Qoutes", path: "/kanye" }];
 const informationalMenu = [{ name: "Countries Databse", path: "/countries" }];
@@ -21,15 +21,15 @@ export const NavigationBar = ({ opacity }) => {
                 <a href="/" className="navbarText">
                     Home
                 </a>
-                <EntertainmentDropdown
-                    opacity={opacity}
-                    name="Entertainment"
-                    menu={entertainmentMenu}
-                />
-                <EntertainmentDropdown
+                <Dropdown
                     opacity={opacity}
                     name="Informational"
                     menu={informationalMenu}
+                />
+                <Dropdown
+                    opacity={opacity}
+                    name="Entertainment"
+                    menu={entertainmentMenu}
                 />
             </div>
         </div>

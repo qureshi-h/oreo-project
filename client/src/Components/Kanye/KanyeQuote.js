@@ -46,11 +46,19 @@ export const KanyeQuote = () => {
                                 </h3>
                             </div>
                         </div>
-                        <img className="kanyeImage" src={image} />
+                        <img
+                            className="kanyeImage"
+                            src={image}
+                            onClick={getQuote}
+                        />
                     </div>
                 ) : (
                     <div>
-                        <img className="kanyeImage" src={image} />
+                        <img
+                            className="kanyeImage"
+                            src={image}
+                            onClick={getQuote}
+                        />
                         <div className="quoteBox">
                             <div style={{ padding: "2rem" }}>
                                 <h3>{quote}</h3>
