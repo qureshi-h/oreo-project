@@ -11,7 +11,7 @@ export const CountriesSearchPage = () => {
                 <title>The Oreo Project | Kanye Quotes</title>
                 <style>{"body { background-color: #060026; }"}</style>
             </Helmet>
-            <NavigationBar />
+            <NavigationBar opacity={0.4} />
             <SelectCountry />
         </div>
     );
