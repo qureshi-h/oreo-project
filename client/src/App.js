@@ -4,6 +4,7 @@ import { Route, BrowserRouter, Routes } from "react-router-dom";
 import { LandingPage } from "./Pages/LandingPage";
 import { KanyePage } from "./Pages/KanyePage";
 import { CountriesSearchPage } from "./Pages/CountriesSearchPage";
+import { CountryInfoPage } from "./Pages/CountryInfoPage";
 
 function App() {
     return (
@@ -15,6 +16,10 @@ function App() {
                     <Route
                         path="/countries"
                         element={<CountriesSearchPage />}
+                    />
+                    <Route
+                        path="/countries/info/:country"
+                        element={<CountryInfoPage />}
                     />
                 </Routes>
             </BrowserRouter>
