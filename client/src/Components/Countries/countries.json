@@ -201,7 +201,7 @@
         { "label": "Romania", "name": "Romania" },
         { "label": "Russia", "name": "Russia" },
         { "label": "Rwanda", "name": "Rwanda" },
-        { "label": "RÃ©union", "name": "RÃ©union" },
+        { "label": "RÃunion", "name": "RÃunion" },
         { "label": "Saint BarthÃ©lemy", "name": "Saint BarthÃ©lemy" },
         {
             "label": "Saint Helena, Ascension and Tristan da Cunha",
@@ -288,6 +288,6 @@
         { "label": "Yemen", "name": "Yemen" },
         { "label": "Zambia", "name": "Zambia" },
         { "label": "Zimbabwe", "name": "Zimbabwe" },
-        { "label": "Ãland Islands", "name": "Ã…land Islands" }
+        { "label": "Ãland Islands", "name": "Ãland Islands" }
     ]
 }

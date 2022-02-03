@@ -2,6 +2,7 @@ import React from "react";
 
 import Select from "react-select";
 import countries from "./countries.json";
+import Button from "@mui/material/Button";
 
 export const SelectCountry = () => {
     const [country, setCountry] = React.useState("");
@@ -20,10 +21,9 @@ export const SelectCountry = () => {
         }),
 
         option: (styles, { data, isDisabled, isFocused, isSelected }) => {
-            const color = data.color;
             return {
                 ...styles,
-                backgroundColor: isDisabled ? "grey" : "white",
+                backgroundColor: isFocused ? "#2584FF" : "white",
                 color: "#000000",
                 cursor: isDisabled ? "not-allowed" : "default",
             };
@@ -40,6 +40,17 @@ export const SelectCountry = () => {
                 styles={colourStyles}
                 placeholder={countries.data[0].name}
             />
+            <Button
+                variant="contained"
+                className="selectCountryButton"
+                sx={{
+                    marginLeft: "1.5vw",
+                    borderRadius: "0.5rem",
+                    fontSize: "1.2rem",
+                }}
+            >
+                Search
+            </Button>
         </div>
     );
 };
