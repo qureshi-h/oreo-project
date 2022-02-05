@@ -273,3 +273,31 @@ p {
 .selectCountryButton {
     height: 5vh;
 }
+
+/* Country Info  */
+
+.countryInfo {
+    justify-content: center;
+}
+
+.countryInfo h1 {
+    /* text-align: center; */
+    color: #0df1f1;
+    margin-top: 15vh;
+}
+
+.infoTable {
+    margin: 10vh 0vw 0vh 10vw;
+    width: 30vw;
+}
+
+.countryFlag {
+    display: inline;
+    margin: 10vh 0vw 0vh 10vw;
+}
+
+.countryMap img {
+    margin: 10vh 0vw 0vh 20vw;
+    height: 45vh;
+    border-radius: 100rem;
+}
