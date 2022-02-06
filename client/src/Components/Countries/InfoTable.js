@@ -46,7 +46,10 @@ export default function InfoTable({ info }) {
                 .join(", "),
         },
         { key: "Area", value: info.area },
-        { key: "Borders", value: info.borders.join(", ") },
+        {
+            key: "Borders",
+            value: info.borders ? info.borders.join(", ") : "None",
+        },
         { key: "Sub-Region", value: info.subregion },
         { key: "Continents", value: info.continents.join(", ") },
         { key: "Land-Locked", value: info.landlocked ? "Yes" : "No" },
