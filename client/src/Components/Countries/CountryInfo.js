@@ -30,8 +30,8 @@ export const CountryInfo = ({ country }) => {
                         style={{
                             display: "flex",
                             alignItems: "center",
-                            justifyContent: "right",
-                            marginRight: "10vw",
+                            justifyContent: "center",
+                            marginLeft: "10vw",
                         }}
                     >
                         <h1>{info.name.official}</h1>
