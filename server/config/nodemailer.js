@@ -1,6 +1,7 @@
 require("dotenv").config();
 const nodemailer = require("nodemailer");
 
+console.log(process.env.EMAIL_ACCOUNT, process.env.EMAIL_PASSWORD);
 let transporter = nodemailer.createTransport({
     host: "smtp-mail.outlook.com",
     port: 587,
