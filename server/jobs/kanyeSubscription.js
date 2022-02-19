@@ -12,7 +12,7 @@ async function main() {
             subject: "Your Daily Kanye Qoute",
             text: data.data.quote,
             html: `<b>${data.data.quote}</b>
-            <img src="cid:oreo@kreata.ee"/>`,
+            <div><img src="cid:oreo@kreata.ee"/></div>`,
             attachments: [
                 {
                     filename: "kanye.jpeg",
