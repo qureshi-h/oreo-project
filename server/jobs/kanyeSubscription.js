@@ -2,6 +2,7 @@ require("dotenv").config();
 const transporter = require("../config/nodemailer");
 const axios = require("axios");
 const client = require("../config/mongodb");
+const mailTemplate = require("./mailTemplate");
 
 async function main() {
     await client.connect();
@@ -19,8 +20,7 @@ async function main() {
             to: subscribers.map((subscriber) => subscriber.email).join(", "),
             subject: "Your Daily Kanye Qoute",
             text: data.data.quote,
-            html: `<b>${data.data.quote}</b>
-            <div><img src="cid:oreo@kreata.ee"/></div>`,
+            html: mailTemplate(data.data.quote),
             attachments: [
                 {
                     filename: "kanye.jpeg",
