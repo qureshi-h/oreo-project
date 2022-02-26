@@ -20,13 +20,12 @@ const bree = new Bree({
     jobs: [
         {
             name: "kanyeSubscription",
-            // cron: "00 20 * * *",
-            interval: "5s",
+            cron: "00 20 * * *",
         },
     ],
 });
 
-// bree.start();
+bree.start();
 
 // Routes
 app.use("/kanye", kanyeRoutes);
