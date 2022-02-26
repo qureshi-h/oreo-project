@@ -3,7 +3,6 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const Bree = require("bree");
 const client = require("./config/mongodb");
-const b = require("./jobs/kanyeSubscription");
 
 const kanyeRoutes = require("./routes/kanyeRoutes");
 
