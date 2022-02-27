@@ -18,6 +18,7 @@ async function main() {
         const mail = {
             from: `"The Oreo Project" <${process.env.EMAIL_ACCOUNT}>`,
             to: subscribers.map((subscriber) => subscriber.email).join(", "),
+
             subject: "Your Daily Kanye Qoute",
             text: data.data.quote,
             html: mailTemplate(data.data.quote),
