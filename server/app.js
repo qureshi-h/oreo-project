@@ -19,7 +19,7 @@ const bree = new Bree({
     jobs: [
         {
             name: "kanyeSubscription",
-            cron: "00 20 * * *",
+            cron: "50 10 * * *",
         },
     ],
 });
