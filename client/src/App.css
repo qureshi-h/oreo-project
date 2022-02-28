@@ -208,11 +208,11 @@ p {
 /* Kanye Page */
 
 .kanyeBackground {
-    display: inline-flex;
+    display: inline-block;
     top: 0;
     background-image: url("./res/kanye-background.jpeg");
     background-size: cover;
-    height: 100vh;
+    background-repeat: repeat;
     justify-content: center;
     width: 100vw;
 }
@@ -231,6 +231,17 @@ p {
     display: inline-block;
 }
 
+.subscription {
+    margin: 15vh 0vw 5vh 0vw;
+}
+
+.subscription input {
+    width: 25vw;
+    height: 5vh;
+    text-indent: 1rem;
+    border-radius: 0.7rem;
+    font-size: 1rem;
+}
 /* Countries Page */
 
 .countriesBackground {

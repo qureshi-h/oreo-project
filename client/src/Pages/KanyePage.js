@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { KanyeQuote } from "../Components/Kanye/KanyeQuote";
+import { Subscription } from "../Components/Kanye/Subscription";
 import { NavigationBar } from "../Components/UIElements/NavigationBar";
 
 export const KanyePage = () => {
@@ -12,6 +13,7 @@ export const KanyePage = () => {
             </Helmet>
             <NavigationBar />
             <KanyeQuote />
+            <Subscription />
         </div>
     );
 };

@@ -28,10 +28,6 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
     },
 }));
 
-function createData(name, calories, fat, carbs, protein) {
-    return { name, calories, fat, carbs, protein };
-}
-
 export default function InfoTable({ info }) {
     const data = [
         { key: "Common Name", value: `${info.name.common} ${info.flag}` },
